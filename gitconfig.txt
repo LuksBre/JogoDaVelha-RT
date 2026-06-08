@@ -1,0 +1,26 @@
+git config --global user.name LuksBre
+git config --global user.email lucasbregadioli8@gmail.com
+
+-- Criar o projeto com template branco typescript
+npx create-expo-app jogodavelha --template blank-typescript
+
+-- Configuração do Firebase
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDvOvrc-yNutek9zh3OY4KnHgRxjhMZ3fQ",
+  authDomain: "jogodavelha-rt.firebaseapp.com",
+  databaseURL: "https://jogodavelha-rt-default-rtdb.firebaseio.com",
+  projectId: "jogodavelha-rt",
+  storageBucket: "jogodavelha-rt.firebasestorage.app",
+  messagingSenderId: "824204820959",
+  appId: "1:824204820959:web:b07bb1790ba4014842846a"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
